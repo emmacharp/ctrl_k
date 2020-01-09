@@ -16,8 +16,8 @@
 
         public function addScriptToHead($context)
         {
-            Administration::instance()->Page->addScriptToHead('https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js');
-            Administration::instance()->Page->addScriptToHead(URL.'/extensions/ctrl_k/assets/ctrl_k.js');
-            Administration::instance()->Page->addStylesheetToHead(URL.'/extensions/ctrl_k/assets/ctrl_k.css');
+            Administration::instance()->Page->addScriptToBody('https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js');
+            Administration::instance()->Page->addScriptToBody(URL.'/extensions/ctrl_k/assets/ctrl_k.js');
+            Administration::instance()->Page->addStylesheetToBody(URL.'/extensions/ctrl_k/assets/ctrl_k.css');
         }
     }
