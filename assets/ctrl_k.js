@@ -101,7 +101,7 @@
 			return event.preventDefault();
 		}
 
-		if (event.which === 27 && !!$(event.target).is(sels.input)) {
+		if (event.which === 27) {
 			close();
 		}
 	};
